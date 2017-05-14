@@ -12,22 +12,26 @@ Step for run_analysis.R:
 
 4.label the dataset with descriptive variable names, which included expanding abbreviations and removing repeated term
 
-5.Create a second, independent tidy set with function summarise_each() to group by 30 subjects x 6 activities 
-and output mean of each group
+5.Create a second, independent tidy set with function summarise_each() and group_by() to 30 subjects x 6 activities 
+and output average of each group
 
+---
 # Variables
 
 [x_train, y_train, s_train, x_test, y_test, s_test] contain the data from the downloaded files.
 
 [x, y, s] merge the previous datasets to further analysis.
 
-[features] contains the correct columnnames for the [x] dataset, especially those containing mean() and std() features
+[features] contains the correct columnnames for the [x] dataset
 
-[xselect] stores the selected columns of [x] dataset
+[colselect] contains the columnnames extracting from [x], which only containing the measurements on the mean and std
+
+[xselect] stores the new dataset extracting from [x], which only containing the measurements on the mean and std
 
 [activities] contains the correct variables for [y_test] and [y_train]
 
 [newdataset] merges [xselect, y and s] in a new dataset.
 
-Finally, [data_summary] contains the relevant averages which will be stored in a .txt file. with function summarise_each() 
-to group by 30 subjects x 6 activities and output mean of each group.
+[newdatasetCols] are columnnames of [newdataset]
+
+[data_summary] contains the relevant averages group by 30 subjects x 6 activities with function summarise_each(), which will be stored in a .txt file.
