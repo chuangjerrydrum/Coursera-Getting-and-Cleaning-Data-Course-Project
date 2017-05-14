@@ -17,7 +17,7 @@ and output mean of each group
 
 # Variables
 
-[x_train, y_traiin, s_train, x_test, y_test, s_test] contain the data from the downloaded files.
+[x_train, y_train, s_train, x_test, y_test, s_test] contain the data from the downloaded files.
 
 [x, y, s] merge the previous datasets to further analysis.
 
