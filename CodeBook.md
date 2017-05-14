@@ -34,4 +34,4 @@ and output average of each group
 
 [newdatasetCols] are columnnames of [newdataset]
 
-[data_summary] contains the relevant averages group by 30 subjects x 6 activities with function summarise_each(), which will be stored in a .txt file.
+[data_summary] contains a second, independent tidy set with function summarise_each() and group_by() to 30 subjects x 6 activities and output average of each group, which will be stored in a .txt file.
