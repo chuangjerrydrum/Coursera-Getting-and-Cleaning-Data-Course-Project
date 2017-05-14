@@ -21,7 +21,8 @@ just importing the file.
 
 4.data_summary.txt, which contains the output of final tidy data set.
 
-Step for creating dataset:
+---
+Description of each step is as follow:
 
 [Step 0A - Get data]
 
