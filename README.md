@@ -14,9 +14,9 @@ just importing the file.
 
 Step for creating dataset:
 
-[STEP 0A - Get data]
+[Step 0A - Get data]
 
-[STEP 0B - Set working directory and Read data]
+[Step 0B - Set working directory and Read data]
 
 [Step 1 - Merge the training and the test sets to create one data set]
 
