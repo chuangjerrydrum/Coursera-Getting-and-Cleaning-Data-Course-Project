@@ -24,6 +24,7 @@ x_train<-read.table("train/X_train.txt")
 y_train<-read.table("train/y_train.txt")
 # read features
 features<-read.table("features.txt")
+
 # [Step 1 - Merge the training and the test sets to create one data set]
 # Rename column names
 y_test<-rename(y_test, activity=V1)
@@ -65,8 +66,8 @@ colnames(newdataset) <- newdatasetCols
 
 # [Step 5 - Create a second, independent tidy set with the average of each
 #           variable for each activity and each subject]
-# use summarise_each to group by 30 subjects x 6 activities, 
-# and output mean of each group 
+# use summarise_each() and group_by() funtion to 30 subjects x 6 activities, 
+# and output the average of each group 
 data_summary <- newdataset %>%
     group_by(subject,activity) %>%
     summarise_each(funs(mean))
